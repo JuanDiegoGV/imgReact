@@ -1,0 +1,36 @@
+@import "../../index.scss";
+
+.contenedorRandom{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    .imgRandom{
+        margin: 10px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .btnRandom {
+        width: 10%;
+        margin: 10px auto 20px;
+        border: none;
+        padding: 10px;
+        background-color: $colorSecondary;
+        border-radius: 10px;
+        transition: 0.2s;
+        font-family: $letterSecondary;
+    }
+    .btnRandom:hover {
+        background-color: $colorTerciary;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    input{
+        width: 20%;
+        height: 25px;
+        margin: 0 auto;
+    }
+}
+

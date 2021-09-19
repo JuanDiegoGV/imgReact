@@ -19,20 +19,23 @@
     height: 10%;
     text-align: center;
     .btnPaginacion {
-        margin: 10px 5px 20px;
+        margin: 10px 10px 20px;
         border: none;
         padding: 10px;
         background-color: $colorSecondary;
         border-radius: 10px;
+        transition: 0.2s;
     }
     .btnPaginacion:hover {
         background-color: $colorTerciary;
         cursor: pointer;
+        transform: scale(1.1);
     }
-    .btnPaginacion[disabled]{
+    .btnPaginacion[disabled] {
         background-color: $colorPrimary;
     }
-    .btnPaginacion[disabled]:hover{
+    .btnPaginacion[disabled]:hover {
         cursor: not-allowed;
+        transform: scale(1);
     }
 }

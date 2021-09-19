@@ -39,9 +39,9 @@ const Inicio = (props) => {
                 </ul>
 
                 <div className="paginacionInicio">
-                    <button className="btnPaginacion" onClick={decrementar} disabled={page == 1 ? true : false}>anterior</button>
+                    <button className="btnPaginacion letterSecondary" onClick={decrementar} disabled={page === 1 ? true : false}>anterior</button>
                     <span>{page}/101</span>
-                    <button className="btnPaginacion" onClick={aumentar}>siguiente</button>
+                    <button className="btnPaginacion letterSecondary" onClick={aumentar}>siguiente</button>
                 </div>
             </div>
         </div>
