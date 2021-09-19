@@ -1,0 +1,73 @@
+@import "../../index.scss";
+
+.card {
+    display: inline-block;
+    width: 45%;
+    height: 500px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.cardImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.cardText {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    z-index: 9;
+    border-radius: 0px 0px 10px 10px;
+    background: $colorSecondary;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .cardText {
+    transform: translateY(-114%);
+    visibility: visible;
+}
+
+.cardOriginalLink {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    span {
+        z-index: 9;
+        background: rgba($color: $colorSecondary, $alpha: 0);
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+
+        a {
+            padding: 10px;
+            color: rgba($color: #000000, $alpha: 0);
+            font-size: 20px;
+        }
+    }
+}
+
+.card:hover .cardOriginalLink span {
+    transform: translateY(-1100%);
+    right: -80%;
+    background: rgba($color: $colorSecondary, $alpha: 1);
+    a {
+        color: rgba($color: #000000, $alpha: 1);
+    }
+}
+
+.card .cardOriginalLink span:hover {
+    background: rgba($color: $colorTerciary, $alpha: 1);
+}
