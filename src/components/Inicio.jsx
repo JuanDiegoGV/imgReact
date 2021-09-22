@@ -41,7 +41,7 @@ const Inicio = (props) => {
                 <div className="paginacionInicio">
                     <button className="btnPaginacion letterSecondary" onClick={decrementar} disabled={page === 1 ? true : false}>anterior</button>
                     <span>{page}/101</span>
-                    <button className="btnPaginacion letterSecondary" onClick={aumentar}>siguiente</button>
+                    <button className="btnPaginacion letterSecondary" onClick={aumentar} disabled={page === 101 ? true : false}>siguiente</button>
                 </div>
             </div>
         </div>
